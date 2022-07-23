@@ -1,0 +1,28 @@
+.about {
+@extend %section;
+
+    padding-top: 0;
+
+    &__item {
+            position: relative;
+        }
+    
+        &__overlay {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(47, 48, 58, 0.8);
+        }
+    
+        &__desk {
+            padding: 27px 82px;
+            font-weight: 700;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--main-dark-theme);
+        }
+}
+

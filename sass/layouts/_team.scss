@@ -1,0 +1,39 @@
+.team {
+@extend %section;
+
+    background-color: #f5f4fa;
+
+
+    &__title {
+            margin-bottom: 50px;
+        }
+    
+        &__item {
+            background-color: var(--main-dark-theme);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+        }
+    
+        &__box {
+            padding: 30px 0;
+        }
+    
+        &__name {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+            color: var(--main-light-theme);
+            margin-bottom: 10px;
+        }
+    
+        &__jobtitle {
+            font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+            color: var(--second-light-theme);
+            margin-bottom: 16px;
+        }
+}
+

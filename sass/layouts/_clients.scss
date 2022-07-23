@@ -1,0 +1,42 @@
+.clients {
+    @extend %section;
+
+    &__title {
+            margin-bottom: 50px;
+        }
+    
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 170px;
+            height: 92px;
+            left: 415px;
+            top: 2493px;
+            border: 1px solid var(--bg-buttons);
+            border-radius: 4px;
+            color: var(--bg-buttons);
+    
+            transition: color var(--anim-slow), border var(--anim-slow);
+        }
+    
+        &__link:hover,
+        &__link:focus {
+            color: var(--btn-change);
+            border: 1px solid var(--btn-change);
+        }
+
+                &__icon {
+                    fill: currentColor;
+                }
+}
+
+

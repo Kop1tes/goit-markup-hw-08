@@ -1,0 +1,100 @@
+.main__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-dark-theme);
+    background-color: var(--accent-txt-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  
+    transition: background-color var(--anim-slow);
+
+    &:hover,
+    &:focus {
+    background-color: var(--btn-change);
+  }
+
+  &--send {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+.modal__btn--close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--main-dark-theme);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: var(--btn-change);
+    }
+}
+
+/* Section portfolio */
+
+.buttons__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.buttons__item {
+    margin-right: 8px;
+}
+
+.filters__btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--main-light-theme);
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition: color var(--anim-slow), background-color var(--anim-slow),
+        drop-shadow var(--anim-slow);
+
+        &:active {
+                background-color: var(--main-dark-theme);
+            }
+        
+            &:hover,
+            &:focus {
+                color: var(--main-dark-theme);
+                background-color: var(--accent-txt-cl);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        
+            &.active {
+                color: var(--main-dark-theme);
+                background-color: var(--accent-txt-cl);
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        
+            &:current {
+                color: var(--main-dark-theme);
+            }
+}
+
