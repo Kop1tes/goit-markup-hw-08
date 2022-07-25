@@ -1,19 +1,33 @@
 .header {
+    display: flex;
+    align-items: center;
+    height: 60px;
     box-sizing: border-box;
     border-bottom: 1px solid #ececec;
+    z-index: 10;
+
+    @media screen and (min-width: 768px) {
+            height: 80px;
+        }
 
     &__nav {
-            display: flex;
+
+            display: none;
             align-items: center;
+
+            @media screen and (min-width: 768px) {
+                    display: block;
+            }
         }
     
         &__list {
-            display: flex;
+        display: flex;            
         }
     
         &__container {
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
     
         &__item:not(:last-child) {
@@ -42,44 +56,68 @@
 
 
 .current__link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    color: var(--accent-txt-cl);
+display: none;
 
-    &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            display: inline-block;
-            margin-right: 10px;
-            color: var(--accent-txt-cl);
-            background-color: var(--accent-txt-cl);
-            border-radius: 2px;
+    @media screen and (min-width: 768px) {
+            position: relative;
+                display: flex;
+                align-items: center;
+                color: var(--accent-txt-cl);
+            
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    color: var(--accent-txt-cl);
+                    background-color: var(--accent-txt-cl);
+                    border-radius: 2px;
+                }
         }
+
+    
 }
 
 .contact-header {
-    display: flex;
+    display: none;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
 
     &__item {
             font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
+            font-size: 12px;
+            line-height: 1.16;
             letter-spacing: 0.02em;
+
+            @media screen and (min-width: 1200px) {
+                    font-size: 14px;
+                        line-height: 1.14;
+                        
         }
-    
+    }
+
         &__item:not(:last-child) {
-            margin-right: 30px;
+            @media screen and (min-width: 1200px) {
+                    margin-right: 20px;
+                }
+            
         }
     
         &__link {
-            display: flex;
-            align-items: center;
+            
             color: var(--second-light-theme);
     
             transition: color var(--anim-slow);

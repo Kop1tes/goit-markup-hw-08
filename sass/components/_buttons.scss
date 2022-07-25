@@ -53,12 +53,18 @@
 
 .buttons__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    gap: 15px 8px;
+
+@media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
 
 .buttons__item {
-    margin-right: 8px;
 }
 
 .filters__btn {

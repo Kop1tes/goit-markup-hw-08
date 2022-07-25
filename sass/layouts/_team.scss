@@ -1,11 +1,30 @@
 .team {
-@extend %section;
+padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     background-color: #f5f4fa;
 
 
     &__title {
+            line-height: 42px;
             margin-bottom: 50px;
+        }
+
+        &__list {
+            --items: 1;
+
+            @media screen and (min-width: 768px) {
+                    --items: 2;
+                }
+                
+                        @media screen and (min-width: 1200px) {
+                            --items: 4;
+                        }
         }
     
         &__item {
