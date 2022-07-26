@@ -12,7 +12,8 @@
         }
     
         &__list {
-            ---items: 2;
+
+        --items: 2;
             
                 @media screen and (min-width: 768px) {
                     --items: 3;
@@ -23,9 +24,6 @@
                 }
         }
 
-        &__item {
-        }
-    
         &__link {
             display: flex;
             align-items: center;
