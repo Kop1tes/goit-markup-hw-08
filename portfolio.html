@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Служебная информация -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
     <!-- custom styles end -->
 </head>
 
-<body>
+<body data-body>
     <!-- Section Header -->
     <header class="header">
         <div class="container header__container">
@@ -88,293 +89,379 @@
             </ul>
         </div>
     </header>
-    <!-- Секция main
+    <!-- Секция main -->
     <main>
-        <!-- Cекция Portfolio -->
-    <section class="projects">
-        <div class="container">
-            <h1 class="visually-hidden">Portfolio</h1>
-            <!-- Секция filters -->
-            <ul class="buttons__list list">
-                <li class="buttons__item"><button class="filters__btn active" type="button">Все</button></li>
-                <li class="buttons__item"><button class="filters__btn" type="button">Веб-сайты</button></li>
-                <li class="buttons__item"><button class="filters__btn" type="button">Приложения</button></li>
-                <li class="buttons__item"><button class="filters__btn" type="button">Дизайн</button></li>
-                <li class="buttons__item"><button class="filters__btn" type="button">Маркетинг</button></li>
-            </ul>
-            <!-- Секция projects -->
-            <ul class="projects__list list card-set">
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-1-l.webp 1x, ./images/projects/projects-1-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-1-m.webp 1x, ./images/projects/projects-1-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-1-s.webp 1x, ./images/projects/projects-1-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-1-s.webp" alt="Веб-сайт" width="450"
-                                    height="294" />
-                            </picture>
+        <!--Cекция Portfolio -->
+        <section class="projects">
+            <div class="container">
+                <h1 class="visually-hidden">Portfolio</h1>
+                <!-- Секция filters -->
+                <ul class="buttons__list list">
+                    <li class="buttons__item"><button class="filters__btn active" type="button">Все</button></li>
+                    <li class="buttons__item"><button class="filters__btn" type="button">Веб-сайты</button></li>
+                    <li class="buttons__item"><button class="filters__btn" type="button">Приложения</button></li>
+                    <li class="buttons__item"><button class="filters__btn" type="button">Дизайн</button></li>
+                    <li class="buttons__item"><button class="filters__btn" type="button">Маркетинг</button></li>
+                </ul>
+                <!-- Секция projects -->
+                <ul class="projects__list list card-set">
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-1-l.webp 1x, ./images/projects/projects-1-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-1-m.webp 1x, ./images/projects/projects-1-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-1-s.webp 1x, ./images/projects/projects-1-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-1-l.jpg 1x, ./images/projects/projects-1-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-1-m.jpg 1x, ./images/projects/projects-1-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-1-s.jpg 1x, ./images/projects/projects-1-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-1-s.jpg" alt="Веб-сайт" width="450"
+                                        height="294" />
+                                </picture>
 
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Технокряк</h2>
-                            <p class="projects__status">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Технокряк</h2>
+                                <p class="projects__status">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-2-l.webp 1x, ./images/projects/projects-2-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-2-m.webp 1x, ./images/projects/projects-2-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-2-s.webp 1x, ./images/projects/projects-2-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-2-s.webp" alt="Дизайн" width="450" height="294" />
-                            </picture>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-2-l.webp 1x, ./images/projects/projects-2-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-2-m.webp 1x, ./images/projects/projects-2-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-2-s.webp 1x, ./images/projects/projects-2-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-2-l.jpg 1x, ./images/projects/projects-2-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-2-m.jpg 1x, ./images/projects/projects-2-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-2-s.jpg 1x, ./images/projects/projects-2-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-2-s.jpg" alt="Дизайн" width="450"
+                                        height="294" />
+                                </picture>
 
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Постер New Orlean vs Golden Star</h2>
-                            <p class="projects__status">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Постер New Orlean vs Golden Star</h2>
+                                <p class="projects__status">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-3-l.webp 1x, ./images/projects/projects-3-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-3-m.webp 1x, ./images/projects/projects-3-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-3-s.webp 1x, ./images/projects/projects-3-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-3-s.webp" alt="Ресторан" width="450"
-                                    height="294" />
-                            </picture>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-3-l.webp 1x, ./images/projects/projects-3-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-3-m.webp 1x, ./images/projects/projects-3-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-3-s.webp 1x, ./images/projects/projects-3-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-3-l.jpg 1x, ./images/projects/projects-3-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-3-m.jpg 1x, ./images/projects/projects-3-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-3-s.jpg 1x, ./images/projects/projects-3-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-3-s.jpg" alt="Ресторан" width="450"
+                                        height="294" />
+                                </picture>
 
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
-                        <div class="projects__box-down">
-                            <h2 class=" projects__name">Ресторан Seafood</h2>
-                            <p class="projects__status">Приложение</p>
-                        </div>
-                    </a>
-                </li>
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
+                            <div class="projects__box-down">
+                                <h2 class=" projects__name">Ресторан Seafood</h2>
+                                <p class="projects__status">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-4-l.webp 1x, ./images/projects/projects-4-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-4-m.webp 1x, ./images/projects/projects-4-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-4-s.webp 1x, ./images/projects/projects-4-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-4-s.webp" alt="Наушники" width="450"
-                                    height="294" />
-                            </picture>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-4-l.webp 1x, ./images/projects/projects-4-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-4-m.webp 1x, ./images/projects/projects-4-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-4-s.webp 1x, ./images/projects/projects-4-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-4-l.jpg 1x, ./images/projects/projects-4-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-4-m.jpg 1x, ./images/projects/projects-4-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-4-s.jpg 1x, ./images/projects/projects-4-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-4-s.jpg" alt="Наушники" width="450"
+                                        height="294" />
+                                </picture>
 
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
-
-
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Проект Prime</h2>
-                            <p class="projects__status">Маркетинг</p>
-                        </div>
-                    </a>
-
-                </li>
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-5-l.webp 1x, ./images/projects/projects-5-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-5-m.webp 1x, ./images/projects/projects-5-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-5-s.webp 1x, ./images/projects/projects-5-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-4-s.webp" alt="Коробки" width="450" height="294" />
-                            </picture>
-
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
-
-
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Проект Boxes</h2>
-                            <p class="projects__status">Приложение</p>
-                        </div>
-                    </a>
-
-                </li>
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-6-l.webp 1x, ./images/projects/projects-6-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-6-m.webp 1x, ./images/projects/projects-6-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-6-s.webp 1x, ./images/projects/projects-6-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-4-s.webp" alt="Компютер" width="450"
-                                    height="294" />
-                            </picture>
-
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
 
 
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Inspiration has no Borders</h2>
-                            <p class="projects__status">Веб-сайт</p>
-                        </div>
-                    </a>
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Проект Prime</h2>
+                                <p class="projects__status">Маркетинг</p>
+                            </div>
+                        </a>
 
-                </li>
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-7-l.webp 1x, ./images/projects/projects-7-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-7-m.webp 1x, ./images/projects/projects-7-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-7-s.webp 1x, ./images/projects/projects-7-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-4-s.webp" alt="Книга" width="450" height="294" />
-                            </picture>
+                    </li>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-5-l.webp 1x, ./images/projects/projects-5-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-5-m.webp 1x, ./images/projects/projects-5-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-5-s.webp 1x, ./images/projects/projects-5-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-5-l.jpg 1x, ./images/projects/projects-5-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-5-m.jpg 1x, ./images/projects/projects-5-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-5-s.jpg 1x, ./images/projects/projects-5-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-5-s.jpg" alt="Коробки" width="450"
+                                        height="294" />
+                                </picture>
 
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
-
-
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Издание Limited Edition</h2>
-                            <p class="projects__status">Дизайн</p>
-                        </div>
-                    </a>
-
-                </li>
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-8-l.webp 1x, ./images/projects/projects-8-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-8-m.webp 1x, ./images/projects/projects-8-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-8-s.webp 1x, ./images/projects/projects-8-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-4-s.webp" alt="Бирка" width="450" height="294" />
-                            </picture>
-
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
 
 
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Проект LAB</h2>
-                            <p class="projects__status">Маркетинг</p>
-                        </div>
-                    </a>
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Проект Boxes</h2>
+                                <p class="projects__status">Приложение</p>
+                            </div>
+                        </a>
 
-                </li>
-                <li class="projects__item card-set__item">
-                    <a class="projects__link link" href="">
-                        <div class="projects__overlay">
-                            <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="./images/projects/projects-9-l.webp 1x, ./images/projects/projects-9-l@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(min-width: 768px)"
-                                    srcset="./images/projects/projects-9-m.webp 1x, ./images/projects/projects-9-m@2x.webp 2x"
-                                    type="image/webp">
-                                <source media="(max-width: 767px)"
-                                    srcset="./images/projects/projects-9-s.webp 1x, ./images/projects/projects-9-s@2x.webp 2x"
-                                    type="image/webp">
-                                <img src="./images/projects/projects-4-s.webp" alt="Ноутбук" width="450" height="294" />
-                            </picture>
+                    </li>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-6-l.webp 1x, ./images/projects/projects-6-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-6-m.webp 1x, ./images/projects/projects-6-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-6-s.webp 1x, ./images/projects/projects-6-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-6-l.jpg 1x, ./images/projects/projects-6-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-6-m.jpg 1x, ./images/projects/projects-6-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-6-s.jpg 1x, ./images/projects/projects-6-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-6-s.jpg" alt="Компютер" width="450"
+                                        height="294" />
+                                </picture>
 
-                            <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
-                                функционала и сервисов. Все это позволит посетителю получить исчерпывающие
-                                сведения
-                                о компании или частном лице.</p>
-                        </div>
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
 
 
-                        <div class="projects__box-down">
-                            <h2 class="projects__name">Growing Business</h2>
-                            <p class="projects__status">Приложение</p>
-                        </div>
-                    </a>
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Inspiration has no Borders</h2>
+                                <p class="projects__status">Веб-сайт</p>
+                            </div>
+                        </a>
 
-                </li>
-            </ul>
-        </div>
-    </section>
+                    </li>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-7-l.webp 1x, ./images/projects/projects-7-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-7-m.webp 1x, ./images/projects/projects-7-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-7-s.webp 1x, ./images/projects/projects-7-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-7-l.jpg 1x, ./images/projects/projects-7-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-7-m.jpg 1x, ./images/projects/projects-7-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-7-s.jpg 1x, ./images/projects/projects-7-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-7-s.jpg" alt="Книга" width="450"
+                                        height="294" />
+                                </picture>
+
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
+
+
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Издание Limited Edition</h2>
+                                <p class="projects__status">Дизайн</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-8-l.webp 1x, ./images/projects/projects-8-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-8-m.webp 1x, ./images/projects/projects-8-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-8-s.webp 1x, ./images/projects/projects-8-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-8-l.jpg 1x, ./images/projects/projects-8-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-8-m.jpg 1x, ./images/projects/projects-8-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-8-s.jpg 1x, ./images/projects/projects-8-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-8-s.jpg" alt="Бирка" width="450"
+                                        height="294" />
+                                </picture>
+
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
+
+
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Проект LAB</h2>
+                                <p class="projects__status">Маркетинг</p>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="projects__item card-set__item">
+                        <a class="projects__link link" href="">
+                            <div class="projects__overlay">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-9-l.webp 1x, ./images/projects/projects-9-l@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-9-m.webp 1x, ./images/projects/projects-9-m@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-9-s.webp 1x, ./images/projects/projects-9-s@2x.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/projects-9-l.jpg 1x, ./images/projects/projects-9-l@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/projects-9-m.jpg 1x, ./images/projects/projects-9-m@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/projects/projects-9-s.jpg 1x, ./images/projects/projects-9-s@2x.jpg 2x"
+                                        type="image/jpg">
+                                    <img src="./images/projects/projects-9-s.jpg" alt="Ноутбук" width="450"
+                                        height="294" />
+                                </picture>
+
+                                <p class="projects__desk">Ресурс предлагает комплексные предложения с разным уровнем
+                                    функционала и сервисов. Все это позволит посетителю получить исчерпывающие
+                                    сведения
+                                    о компании или частном лице.</p>
+                            </div>
+
+
+                            <div class="projects__box-down">
+                                <h2 class="projects__name">Growing Business</h2>
+                                <p class="projects__status">Приложение</p>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!-- Секция footer -->
     <footer class="footer">

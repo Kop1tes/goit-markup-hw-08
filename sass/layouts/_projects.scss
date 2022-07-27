@@ -1,5 +1,11 @@
 .projects {
-    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
 &__list {
         --items: 1;
@@ -61,7 +67,7 @@
                 
                 background-color: rgba(33, 150, 243, 0.9);
                 
-                transform: translateY(100%);
+                transform: translateY(101%);
                 
                 transition: transform var(--anim-slow);
                 font-weight: 400;
@@ -86,7 +92,7 @@
     }
 
     &__status {
-        width: 322px;
+        width: 242px;
         font-size: 16px;
         line-height: 1.88;
         color: var(--second-light-theme);

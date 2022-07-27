@@ -17,10 +17,6 @@
   --anim-slow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects {
-  padding: 94px 0;
-}
-
 body {
   font-family: var(--main-font), sans-serif;
   font-size: 14px;
@@ -369,7 +365,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 320px;
+  width: 97%;
   height: 550px;
   padding: 40px 40px;
   background-color: var(--main-dark-theme);
@@ -619,7 +615,7 @@ img {
 
 .mobile-menu__contacts-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 27px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
@@ -1315,6 +1311,16 @@ img {
   }
 }
 
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .projects__list {
   --items: 1;
 }
@@ -1371,8 +1377,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--anim-slow);
   transition: -webkit-transform var(--anim-slow);
   transition: transform var(--anim-slow);
@@ -1396,7 +1402,7 @@ img {
   }
 }
 .projects__status {
-  width: 322px;
+  width: 242px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--second-light-theme);
