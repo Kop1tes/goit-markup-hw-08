@@ -99,12 +99,16 @@ transition: var(--anim-slow);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
 
     font-weight: 500;
         font-size: 18px;
         line-height: 1.22;letter-spacing: 0.02em;
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 480px) {
+        gap: 10px;
+    }
 }
 
 .mobile-menu__socials-item:not(:last-child) .mobile-menu__socials-link {

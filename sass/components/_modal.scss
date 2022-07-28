@@ -26,9 +26,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 97%;
-    height: 550px;
+    
 
-    padding: 40px 40px;
+    padding: 40px 20px;
 
     background-color: var(--main-dark-theme);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,6 +36,8 @@
     border-radius: 4px;
 
     @media screen and (min-width: 480px) {
+        height: 550px;
+        padding: 40px 40px;
             width: 450px;
             height: 609px;
         }

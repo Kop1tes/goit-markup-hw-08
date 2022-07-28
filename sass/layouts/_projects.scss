@@ -43,16 +43,16 @@
 
     &__overlay {
 
-        // @media screen and (min-width: 1200px) {
+        
                 position: relative;
                     overflow: hidden;
-            // }
+            
     }
 
     &__desk {
                 position: absolute;
                 padding: 63px 24px;
-                font-size: 18px;
+                font-size: 15px;
                 line-height: 1.56;
                 color: var(--main-dark-theme);
                 
@@ -71,6 +71,10 @@
                 
                 transition: transform var(--anim-slow);
                 font-weight: 400;
+
+@media screen and (min-width: 1200px) {
+    font-size: 18px;
+}
                 
     }
 
