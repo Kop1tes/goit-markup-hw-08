@@ -588,12 +588,18 @@ img {
   background-color: var(--main-dark-theme);
   z-index: 100;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: var(--anim-slow);
   transition: var(--anim-slow);
 }
+
 .mobile-menu__nav {
   font-weight: 500;
   font-size: 40px;
